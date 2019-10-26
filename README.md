@@ -40,10 +40,6 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```bash
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 ```
-> Adicionar repositório do Docker às fontes do APT:
-```bash
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-```
 > Atualizar lista atual de pacotes com os pacotes Docker:
 ```bash
 sudo apt update
@@ -62,7 +58,7 @@ apt-cache policy docker-ce
 ```
 > Instalar Docker
 ```bash
-sudo apt install docker-ce
+sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 > Verificar se o Docker está sendo executado:
 ```bash
@@ -93,4 +89,5 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 ## Fontes
-[Fonte](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-18-04-pt)
+[Docker Instalação](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+[Instalação](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-18-04-pt)
