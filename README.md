@@ -1,0 +1,69 @@
+# Docker
+
+Lista com comandos úteis para serem utilizados no docker.
+
+## Instalação
+
+Instalação do docker no ubuntu.
+
+> Atualizar lista atual de pacotes:
+```bash
+sudo apt update
+```
+> Instalar alguns pacotes de pré-requisitos para instalar pacotes via HTTPS:
+```bash
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+```
+> Adicionar chave GPG para o repositório oficial do Docker:
+```bash
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+> Adicionar repositório do Docker às fontes do APT:
+```bash
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+```
+> Adicionar repositório do Docker às fontes do APT:
+```bash
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+```
+> Atualizar lista atual de pacotes com os pacotes Docker:
+```bash
+sudo apt update
+```
+> Certificar que o Docker irá ser instalalado a partir do repositório do Docker em vez do repositório padrão do Ubuntu:
+```bash
+apt-cache policy docker-ce
+
+#Saída
+#docker-ce:
+  #Installed: (none)
+  #Candidate: 18.03.1~ce~3-0~ubuntu
+  #Version table:
+     #18.03.1~ce~3-0~ubuntu 500
+        #500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
+```
+> Instalar Docker
+```bash
+sudo apt install docker-ce
+```
+> Verificar se o Docker está sendo executado:
+```bash
+sudo systemctl status docker
+
+#sudo /etc/init.d/docker start
+```
+> Verificar se o Docker está sendo executado:
+```bash
+sudo systemctl status docker
+```
+> Executar comandos Docker sem sudo:
+```bash
+sudo usermod -aG docker ${USER}
+```
+```bash
+su - ${USER}
+```
+```bash
+id -nG
+```
+[Fonte](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-18-04-pt)
