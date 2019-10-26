@@ -3,6 +3,21 @@
 Lista com comandos úteis para serem utilizados no docker.
 
 ## Usando
+Utilizando Docker e docker-compose.
+> Subir container:
+```bash
+doscker-compose up -d
+```
+> Visualizar container ativos:
+```bash
+doscker ps
+```
+> Entrar no container:
+```bash
+docker-compose exec productapp bash
+```
+
+Básico:
 > Verificar se pode acessar e baixar imagens do Docker Hub:
 ```bash
 docker run hello-world
