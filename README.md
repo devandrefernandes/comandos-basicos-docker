@@ -2,6 +2,24 @@
 
 Lista com comandos úteis para serem utilizados no docker.
 
+## Usando
+> Verificar se pode acessar e baixar imagens do Docker Hub:
+```bash
+docker run hello-world
+```
+> Listar os comandos:
+```bash
+docker
+```
+> Opções para comando específico:
+```bash
+docker subcomando-docker --help
+```
+> Estrutura dos comandos:
+```bash
+docker [option] [command] [arguments]
+```
+
 ## Instalação
 
 Instalação do docker no ubuntu.
@@ -66,7 +84,6 @@ su - ${USER}
 ```bash
 id -nG
 ```
-[Fonte](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-18-04-pt)
 
 ## Instalação Docker-Compose
 ```bash
@@ -74,3 +91,6 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-c
 
 sudo chmod +x /usr/local/bin/docker-compose
 ```
+
+## Fontes
+[Fonte](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-18-04-pt)
