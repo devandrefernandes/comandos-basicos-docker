@@ -90,5 +90,5 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 ## Fontes
-[Docker Instalação](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-[Instalação](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-18-04-pt)
+[Instalação Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+[Instalação Compose](https://docs.docker.com/compose/install/)
