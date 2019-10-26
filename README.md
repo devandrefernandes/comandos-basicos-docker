@@ -68,7 +68,7 @@ id -nG
 ```
 [Fonte](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-18-04-pt)
 
-# Instalação Docker-Compose
+## Instalação Docker-Compose
 ```bash
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
